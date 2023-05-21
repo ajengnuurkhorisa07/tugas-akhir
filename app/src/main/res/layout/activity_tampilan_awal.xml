@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TampilanAwal">
+
+    <ImageView
+        android:id="@+id/lingkaran1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/lingkaran1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"/>
+
+    <ImageView
+        android:id="@+id/gambar"
+        android:layout_width="184dp"
+        android:layout_height="137dp"
+        android:layout_below="@+id/lingkaran1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-3dp"
+        android:src="@drawable/gambar" />
+
+    <TextView
+        android:id="@+id/txt_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gambar"
+        android:layout_marginTop="10dp"
+        android:text="AISINDO "
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="20sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/txt_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/txt_1"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="Association for Information Systems Indonesia"
+        android:padding="20dp"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/black"
+        android:justificationMode="inter_word"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_below="@id/txt_2"
+        android:width="308dp"
+        android:text="Login"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_shape"
+        android:onClick="Login"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:fontFamily="@font/poppins_bold" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/btn_login"
+        android:width="308dp"
+        android:text="Register"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_shape"
+        android:onClick="Register"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:fontFamily="@font/poppins_bold" />
+
+
+</RelativeLayout>
